@@ -8,11 +8,15 @@
     font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #ffffff;
 }
 
-/*Cores*/
+/* Cores */
 .azul {
     color: #005CFF;
 }
@@ -21,8 +25,25 @@ body {
     background-color: #E7E7EA;
 }
 
-/* Barra de Banner */
+.backgroundCinzaEscuro {
+    background-color: #C2C2C2;
+    padding: 120px 64px;
+}
 
+.backgroundCinzaClaro {
+    background-color: #DEDEDE;
+    padding: 40px;
+    width: 100%;
+}
+
+.backgroundAvanti {
+    background-image: url("../assets/webp/imgavanti.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 660px;
+}
+
+/* Barra de Banner */
 .banner {
     background: #005CFF;
     height: 30px;
@@ -31,6 +52,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100%;
 
     .bannerSpan {
         background-color: #6220C1;
@@ -38,6 +60,7 @@ body {
         border-radius: 4px;
     }
 }
+
 
 /* Tipografia */
 h1 {
@@ -48,13 +71,31 @@ h2 {
     font-size: 25px;
 }
 
+
 h3 {
+    font-size: 30px;
+}
+
+.h3 {
     font-size: 60px;
+}
+
+.h4 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 18px;
 }
 
 .p1 {
     font-weight: bold;
     font-size: 14px;
+}
+
+.p2 {
+    font-size: 30px;
+    padding: 60px;
 }
 
 .italic {
@@ -63,10 +104,9 @@ h3 {
     font-size: 14px;
 }
 
-.lighter{
+.lighter {
     font-weight: lighter;
 }
-
 
 /* Layout e Estrutura */
 .container {
@@ -82,6 +122,7 @@ h3 {
 .flex-row {
     display: flex;
     flex-direction: row;
+    gap: 24px;
 }
 
 .flex-column {
@@ -89,8 +130,15 @@ h3 {
     flex-direction: column;
 }
 
+.flex-between {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .align-items {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -120,6 +168,27 @@ h3 {
     }
 }
 
+.inputIewsletter {
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    width: 300px;
+    padding: 10px;
+}
+
+button {
+    font-size: 16px;
+    background-color: #005CFF;
+    font-family: "Nunito", sans-serif;
+    font-weight: bolder;
+    padding: 14px;
+    width: 120px;
+    height: 48px;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+}
 
 /* Carrinho de Compras */
 .cart-container {
@@ -129,7 +198,7 @@ h3 {
         width: 35px;
     }
 
-    .badge {
+     .badge {
         position: absolute;
         top: 1px;
         right: 2px;
@@ -142,7 +211,6 @@ h3 {
     }
 }
 
-
 /* Utilitários e Ajustes */
 .p-1 {
     padding-right: 8px;
@@ -152,6 +220,26 @@ h3 {
     margin-top: 24px;
 }
 
+.mt-56 {
+    margin-top: 56px;
+}
+
 .ml-24 {
     margin-left: 24px;
+}
+
+.w35 {
+    width: 35%;
+}
+
+.w28 {
+    width: 28%;
+}
+
+li {
+    list-style: none;
+}
+
+.mouse {
+    cursor: pointer;
 }
