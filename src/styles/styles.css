@@ -65,7 +65,6 @@ body {
     }
 }
 
-
 /* Tipografia */
 h1 {
     font-size: 100px;
@@ -74,7 +73,6 @@ h1 {
 h2 {
     font-size: 25px;
 }
-
 
 h3 {
     font-size: 30px;
@@ -94,7 +92,6 @@ h5 {
     line-height: 28px;
     color: #303030;
 }
-
 
 p {
     font-size: 18px;
@@ -171,7 +168,6 @@ p {
     align-items: first baseline;
 }
 
-
 /* Barra de Pesquisa */
 .search-bar {
     display: flex;
@@ -196,6 +192,91 @@ p {
         padding: 8px;
     }
 }
+
+/*  menu */
+
+.menu-bar {
+    background: #fff;
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+
+    a {
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+    }
+
+    & :hover {
+        color: blue;
+    }
+
+    & > a,
+    &:hover ~ a {
+        color: blue;
+    }
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+    padding: 20px;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    max-width: 1440px;
+    margin: 8px auto;
+    display: flex;
+    right: 0;
+    left: 0;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+
+    h3 {
+        color: blue;
+        font-size: 16px;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        padding: 5px 0;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.promo {
+    flex: 1;
+    padding: 10px;
+}
+
+.promo img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.promo-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background: rgba(0,0,0,0.6);
+    padding: 10px;
+    border-radius: 5px;
+}
+
 
 .inputIewsletter {
     display: flex;
@@ -281,3 +362,4 @@ li {
 .gap-24{
     gap: 24px;
 }
+
