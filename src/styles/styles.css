@@ -43,6 +43,10 @@ body {
     height: 660px;
 }
 
+.border-radius-8{
+    border-radius: 8px;
+}
+
 /* Barra de Banner */
 .banner {
     background: #005CFF;
@@ -84,6 +88,14 @@ h3 {
     font-size: 20px;
 }
 
+h5 {
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 28px;
+    color: #303030;
+}
+
+
 p {
     font-size: 18px;
 }
@@ -96,6 +108,9 @@ p {
 .p2 {
     font-size: 30px;
     padding: 60px;
+}
+.p3{
+    font-size: 12px;
 }
 
 .italic {
@@ -121,8 +136,7 @@ p {
 
 .flex-row {
     display: flex;
-    flex-direction: row;
-    gap: 24px;
+    flex-direction: row;   
 }
 
 .flex-column {
@@ -132,6 +146,12 @@ p {
 
 .flex-between {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-around{
+    display: flex;
     justify-content: space-around;
     align-items: center;
 }
@@ -140,6 +160,15 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.text-align {
+    display: flex;
+    text-align: center;
+}
+
+.align-items-baseline{
+    align-items: first baseline;
 }
 
 
@@ -198,7 +227,7 @@ button {
         width: 35px;
     }
 
-     .badge {
+    .badge {
         position: absolute;
         top: 1px;
         right: 2px;
@@ -216,6 +245,9 @@ button {
     padding-right: 8px;
 }
 
+.p-32 {
+    padding: 32px;
+}
 .mt-24 {
     margin-top: 24px;
 }
@@ -235,11 +267,17 @@ button {
 .w28 {
     width: 28%;
 }
-
+.w100{
+    width: 100%;
+}
 li {
     list-style: none;
 }
 
 .mouse {
     cursor: pointer;
+}
+
+.gap-24{
+    gap: 24px;
 }
