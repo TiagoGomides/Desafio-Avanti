@@ -36,6 +36,24 @@ body {
     width: 100%;
 }
 
+.backgroundGreen {
+    background-color: #5EC0BE;
+    color: #ffffff;
+    font-weight: bolder;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.backgroundBlue {
+    background-color: #00264E;
+    color: #ffffff;
+    font-weight: bolder;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 10px;
+    width: 45px;
+}
+
 .backgroundAvanti {
     background-image: url("../assets/webp/imgavanti.webp");
     background-size: cover;
@@ -80,6 +98,12 @@ h3 {
 
 .h3 {
     font-size: 60px;
+}
+
+.h33 {
+    font-size: 14px;
+    font-weight: lighter;
+
 }
 
 .h4 {
@@ -136,7 +160,9 @@ p {
     align-items: center;
     flex-direction: row;
     overflow: hidden;
+
 }
+
 
 .flex-row {
     display: flex;
@@ -163,6 +189,12 @@ p {
 .align-items {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.align-items-center-justify-content-start {
+    display: flex;
+    justify-content: start;
     align-items: center;
 }
 
@@ -211,7 +243,6 @@ p {
         color: black;
         padding: 10px;
 
-        
     }
 }
 
@@ -219,7 +250,6 @@ p {
     color: blue;
     font-weight: bold;
 }
-
 
 
 
@@ -232,7 +262,6 @@ p {
     align-items: self-start;
     gap: 24px;
 }
-
 
 .dropdown-content2 {
     position: fixed;
@@ -255,14 +284,13 @@ p {
     left: 0;
 }
 
-.departamento-wrapper:hover .dropdown-content2{
+.departamento-wrapper:hover .dropdown-content2 {
     max-width: 800px;
     margin: 8px auto;
     display: flex;
     right: 0;
     left: 0;
 }
-
 
 
 .column {
@@ -281,7 +309,7 @@ p {
 .departamento-wrapper:hover .departamento-link {
     color: blue;
     font-weight: bold;
-  }
+}
 
 .seta {
     position: absolute;
@@ -355,6 +383,13 @@ button {
     color: #ffffff;
     border: none;
     border-radius: 8px;
+    cursor: pointer;
+}
+
+.buttonCarrossel{
+    width: 100%;
+    font-size: 14px;
+
 }
 
 /* Carrinho de Compras */
@@ -379,12 +414,24 @@ button {
 }
 
 /* Utilitários e Ajustes */
+
+.cursor-pointer{
+    cursor: pointer;
+}
 .p-1 {
     padding-right: 8px;
 }
 
 .p-32 {
     padding: 32px;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px;
 }
 
 .mt-24 {
@@ -437,4 +484,17 @@ li {
 
 .gap-24 {
     gap: 24px;
+}
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    border: 2px solid #DDDDDD;
+    padding: 8px;
+    border-radius: 8px;
 }
