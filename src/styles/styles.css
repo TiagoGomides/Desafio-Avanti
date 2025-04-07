@@ -211,9 +211,7 @@ p {
         color: black;
         padding: 10px;
 
-        &:hover {
-            color: blue;
-        }
+        
     }
 }
 
@@ -221,6 +219,9 @@ p {
     color: blue;
     font-weight: bold;
 }
+
+
+
 
 .dropdown-departamento,
 .dropdown-content {
@@ -232,6 +233,19 @@ p {
     gap: 24px;
 }
 
+
+.dropdown-content2 {
+    position: fixed;
+    top: 150px;
+    left: 100%;
+    background: #fff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    display: none;
+    min-width: 200px;
+
+}
+
 .dropdown:hover .dropdown-departamento,
 .dropdown:hover .dropdown-content {
     max-width: 1440px;
@@ -241,6 +255,16 @@ p {
     left: 0;
 }
 
+.departamento-wrapper:hover .dropdown-content2{
+    max-width: 800px;
+    margin: 8px auto;
+    display: flex;
+    right: 0;
+    left: 0;
+}
+
+
+
 .column {
     flex: 1;
     padding: 10px;
@@ -249,16 +273,15 @@ p {
 }
 
 .departamento-link {
-    display: inline-block;
-    width: 100%;
-    white-space: nowrap;
+    display: flex;
+    width: 20%;
     position: relative;
 }
 
-.departamento-link:hover {
-    color: #003bb3;
+.departamento-wrapper:hover .departamento-link {
+    color: blue;
     font-weight: bold;
-}
+  }
 
 .seta {
     position: absolute;
@@ -310,9 +333,6 @@ p {
     margin: 24px;
     cursor: pointer;
 
-    &:hover {
-        color: #ffffff;
-    }
 }
 
 .inputIewsletter {
@@ -418,4 +438,3 @@ li {
 .gap-24 {
     gap: 24px;
 }
-
