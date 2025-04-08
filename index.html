@@ -12,7 +12,7 @@
         content="e-commerce, loja virtual, vendas online, plataforma de e-commerce, segurança digital, otimização SEO, experiência do usuário">
     <meta name="author" content="Tiago Gomides">
     <meta name="robots" content="index, follow">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.svg" type="image/svg" href="./src/assets/svg/icone.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="./src/assets/svg/icone.svg">
     <link rel="icon" type="image/svg" sizes="32x32" href="./src/assets/svg/icone.svg">
     <link rel="icon" type="image/svg" sizes="16x16" href="./src/assets/svg/icone.svg">
@@ -24,20 +24,30 @@
 
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
 </head>
 
 <body>
+
     <header>
         <p class="banner p1">
             Ganhe <span class="bannerSpan">$10,00</span> de desconto no seu primeiro pedido. Utilize o cupom&nbsp;
             <strong class="italic"> DESCONTO10</strong>
         </p>
-        <section class="container">
+        <section class="container container-menu">
             <img src="./src/assets/svg/logoAvanti.svg" alt="Logo Avanti" title="Logo da Avanti">
-            <div class="search-bar">
-                <input type="text" placeholder="Digite aqui o que você procura">
-                <img src="./src/assets/svg/pesquisa.svg" alt="Lupa de pesquisa">
+
+            <div class="search flex-column align-items-center-justify-content-start">
+                <div class="search-bar align-items-center-justify-content-start">
+                    <input type="text" id="campoBusca" placeholder="Digite aqui o que você procura">
+                    <img src="./src/assets/svg/pesquisa.svg" alt="Lupa de pesquisa" onclick="fazerBusca()">
+                </div>
+                <div id="resultadoBusca" class="resultado mt-8"></div>
             </div>
+
+            <div id="resultadoBusca" class="resultado"></div>
             <section class="flex-row align-items">
                 <div class="flex-row">
                     <img src="./src/assets/svg/user.svg" alt="Usuario" class="p-1">
@@ -52,825 +62,827 @@
                 </div>
             </section>
         </section>
+
+        <nav class=" mt-24  menu-bar container container-menu">
+
+            <section class="dropdown">
+                <a href="#">☰ Todas as Categorias</a>
+                <div class=" dropdown-content">
+
+                    <div class="column">
+                        <div class="departamento-wrapper">
+
+                            <a href="#" class="departamento-link">
+                                Departamento<span class="seta">›</span>
+                            </a>
+
+                            <div class="dropdown-content2 ">
+                                <div class="column flex-column ">
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                </div>
+
+                                <div class="column flex-column">
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                </div>
+
+                                <div class="column flex-column">
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="departamento-wrapper">
+
+                            <a href="#" class="departamento-link">
+                                Departamento<span class="seta">›</span>
+                            </a>
+
+                            <div class="dropdown-content2 ">
+                                <div class="column flex-column ">
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                </div>
+
+                                <div class="column flex-column">
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                </div>
+
+                                <div class="column flex-column">
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="departamento-wrapper">
+                            <a href="#" class="departamento-link">
+                                Departamento<span class="seta">›</span>
+                            </a>
+
+                            <div class="dropdown-content2 ">
+                                <div class="column flex-column ">
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                </div>
+
+                                <div class="column flex-column">
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                </div>
+
+                                <div class="column flex-column">
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="departamento-wrapper">
+                            <a href="#" class="departamento-link">
+                                Departamento<span class="seta">›</span>
+                            </a>
+
+                            <div class="dropdown-content2 ">
+                                <div class="column flex-column ">
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                </div>
+
+                                <div class="column flex-column">
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                </div>
+
+                                <div class="column flex-column">
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="departamento-wrapper">
+
+                            <a href="#" class="departamento-link">
+                                Departamento<span class="seta">›</span>
+                            </a>
+
+                            <div class="dropdown-content2 ">
+                                <div class="column flex-column ">
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                </div>
+
+                                <div class="column flex-column">
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                </div>
+
+                                <div class="column flex-column">
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="departamento-wrapper">
+
+                            <a href="#" class="departamento-link">
+                                Departamento<span class="seta">›</span>
+                            </a>
+
+                            <div class="dropdown-content2 ">
+                                <div class="column flex-column ">
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                </div>
+
+                                <div class="column flex-column">
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                </div>
+
+                                <div class="column flex-column">
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="departamento-wrapper">
+
+                            <a href="#" class="departamento-link">
+                                Departamento<span class="seta">›</span>
+                            </a>
+
+                            <div class="dropdown-content2 ">
+                                <div class="column flex-column ">
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                </div>
+
+                                <div class="column flex-column">
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                </div>
+
+                                <div class="column flex-column">
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="departamento-wrapper">
+
+                            <a href="#" class="departamento-link">
+                                Departamento<span class="seta">›</span>
+                            </a>
+
+                            <div class="dropdown-content2 ">
+                                <div class="column flex-column ">
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                </div>
+
+                                <div class="column flex-column">
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                </div>
+
+                                <div class="column flex-column">
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                    <a href="#">Categoria</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="promo">
+                        <p class="promo-text ml-16">Confira os Produtos <strong class="text">Que acabaram De
+                                chegar</strong>
+                        </p>
+                        <button class="button-promo mt-56 ml-48">VER TODOS</button>
+                    </div>
+                </div>
+                </div>
+
+            </section>
+
+            <section class="dropdown">
+                <a href="#">Departamento</a>
+                <div class=" dropdown-departamento">
+                    <div>
+                        <p class="p4">Departamento</p>
+
+                        <div class=" dropdown-content">
+                            <div class="column flex-column ">
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                            </div>
+
+                            <div class="column flex-column">
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                            </div>
+
+                            <div class="column flex-column">
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                            </div>
+                            <div class="promo">
+                                <p class="promo-text ml-16">Confira os Produtos <strong class="text">Que acabaram De
+                                        chegar</strong>
+                                </p>
+                                <button class="button-promo mt-56 ml-48">VER TODOS</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                </div>
+
+            </section>
+
+            <section class="dropdown">
+                <a href="#">Departamento</a>
+                <div class=" dropdown-departamento">
+                    <div>
+                        <p class="p4">Departamento</p>
+
+                        <div class=" dropdown-content">
+                            <div class="column flex-column ">
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                            </div>
+
+                            <div class="column flex-column">
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                            </div>
+
+                            <div class="column flex-column">
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                            </div>
+                            <div class="promo">
+                                <p class="promo-text ml-16">Confira os Produtos <strong class="text">Que acabaram De
+                                        chegar</strong>
+                                </p>
+                                <button class="button-promo mt-56 ml-48">VER TODOS</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                </div>
+
+            </section>
+
+            <section class="dropdown">
+                <a href="#">Departamento</a>
+                <div class=" dropdown-departamento">
+                    <div>
+                        <p class="p4">Departamento</p>
+
+                        <div class=" dropdown-content">
+                            <div class="column flex-column ">
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                            </div>
+
+                            <div class="column flex-column">
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                            </div>
+
+                            <div class="column flex-column">
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                            </div>
+                            <div class="promo">
+                                <p class="promo-text ml-16">Confira os Produtos <strong class="text">Que acabaram De
+                                        chegar</strong>
+                                </p>
+                                <button class="button-promo mt-56 ml-48">VER TODOS</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                </div>
+
+            </section>
+
+            <section class="dropdown">
+                <a href="#">Departamento</a>
+                <div class=" dropdown-departamento">
+                    <div>
+                        <p class="p4">Departamento</p>
+
+                        <div class=" dropdown-content">
+                            <div class="column flex-column ">
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                            </div>
+
+                            <div class="column flex-column">
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                            </div>
+
+                            <div class="column flex-column">
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                            </div>
+                            <div class="promo">
+                                <p class="promo-text ml-16">Confira os Produtos <strong class="text">Que acabaram De
+                                        chegar</strong>
+                                </p>
+                                <button class="button-promo mt-56 ml-48">VER TODOS</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                </div>
+
+            </section>
+
+            <section class="dropdown">
+                <a href="#">Departamento</a>
+                <div class=" dropdown-departamento">
+                    <div>
+                        <p class="p4">Departamento</p>
+
+                        <div class=" dropdown-content">
+                            <div class="column flex-column ">
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                            </div>
+
+                            <div class="column flex-column">
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                            </div>
+
+                            <div class="column flex-column">
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                            </div>
+                            <div class="promo">
+                                <p class="promo-text ml-16">Confira os Produtos <strong class="text">Que acabaram De
+                                        chegar</strong>
+                                </p>
+                                <button class="button-promo mt-56 ml-48">VER TODOS</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                </div>
+
+            </section>
+
+            <section class="dropdown">
+                <a href="#">Departamento</a>
+                <div class=" dropdown-departamento">
+                    <div>
+                        <p class="p4">Departamento</p>
+
+                        <div class=" dropdown-content">
+                            <div class="column flex-column ">
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                            </div>
+
+                            <div class="column flex-column">
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                            </div>
+
+                            <div class="column flex-column">
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                            </div>
+                            <div class="promo">
+                                <p class="promo-text ml-16">Confira os Produtos <strong class="text">Que acabaram De
+                                        chegar</strong>
+                                </p>
+                                <button class="button-promo mt-56 ml-48">VER TODOS</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                </div>
+
+            </section>
+
+            <section class="dropdown">
+                <a href="#">Departamento</a>
+                <div class=" dropdown-departamento">
+                    <div>
+                        <p class="p4">Departamento</p>
+
+                        <div class=" dropdown-content">
+                            <div class="column flex-column ">
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                            </div>
+
+                            <div class="column flex-column">
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                            </div>
+
+                            <div class="column flex-column">
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                            </div>
+                            <div class="promo">
+                                <p class="promo-text ml-16">Confira os Produtos <strong class="text">Que acabaram De
+                                        chegar</strong>
+                                </p>
+                                <button class="button-promo mt-56 ml-48">VER TODOS</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                </div>
+
+            </section>
+
+            <section class="dropdown">
+                <a href="#">Departamento</a>
+                <div class=" dropdown-departamento">
+                    <div>
+                        <p class="p4">Departamento</p>
+
+                        <div class=" dropdown-content">
+                            <div class="column flex-column ">
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                            </div>
+
+                            <div class="column flex-column">
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                            </div>
+
+                            <div class="column flex-column">
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                            </div>
+                            <div class="promo">
+                                <p class="promo-text ml-16">Confira os Produtos <strong class="text">Que acabaram De
+                                        chegar</strong>
+                                </p>
+                                <button class="button-promo mt-56 ml-48">VER TODOS</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                </div>
+
+            </section>
+        </nav>
     </header>
 
-    <nav class=" mt-24  menu-bar container">
 
-        <section class="dropdown">
-            <a href="#">☰ Todas as Categorias</a>
-            <div class=" dropdown-content">
 
-                <div class="column">
-                    <div class="departamento-wrapper">
-
-                        <a href="#" class="departamento-link">
-                            Departamento<span class="seta">›</span>
-                        </a>
-
-                        <div class="dropdown-content2 ">
-                            <div class="column flex-column ">
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                            </div>
-
-                            <div class="column flex-column">
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                            </div>
-
-                            <div class="column flex-column">
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <div class="departamento-wrapper">
-
-                        <a href="#" class="departamento-link">
-                            Departamento<span class="seta">›</span>
-                        </a>
-
-                        <div class="dropdown-content2 ">
-                            <div class="column flex-column ">
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                            </div>
-
-                            <div class="column flex-column">
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                            </div>
-
-                            <div class="column flex-column">
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="departamento-wrapper">
-                        <a href="#" class="departamento-link">
-                            Departamento<span class="seta">›</span>
-                        </a>
-
-                        <div class="dropdown-content2 ">
-                            <div class="column flex-column ">
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                            </div>
-
-                            <div class="column flex-column">
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                            </div>
-
-                            <div class="column flex-column">
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="departamento-wrapper">
-                        <a href="#" class="departamento-link">
-                            Departamento<span class="seta">›</span>
-                        </a>
-
-                        <div class="dropdown-content2 ">
-                            <div class="column flex-column ">
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                            </div>
-
-                            <div class="column flex-column">
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                            </div>
-
-                            <div class="column flex-column">
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="departamento-wrapper">
-
-                        <a href="#" class="departamento-link">
-                            Departamento<span class="seta">›</span>
-                        </a>
-
-                        <div class="dropdown-content2 ">
-                            <div class="column flex-column ">
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                            </div>
-
-                            <div class="column flex-column">
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                            </div>
-
-                            <div class="column flex-column">
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="departamento-wrapper">
-
-                        <a href="#" class="departamento-link">
-                            Departamento<span class="seta">›</span>
-                        </a>
-
-                        <div class="dropdown-content2 ">
-                            <div class="column flex-column ">
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                            </div>
-
-                            <div class="column flex-column">
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                            </div>
-
-                            <div class="column flex-column">
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="departamento-wrapper">
-
-                        <a href="#" class="departamento-link">
-                            Departamento<span class="seta">›</span>
-                        </a>
-
-                        <div class="dropdown-content2 ">
-                            <div class="column flex-column ">
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                            </div>
-
-                            <div class="column flex-column">
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                            </div>
-
-                            <div class="column flex-column">
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="departamento-wrapper">
-
-                        <a href="#" class="departamento-link">
-                            Departamento<span class="seta">›</span>
-                        </a>
-
-                        <div class="dropdown-content2 ">
-                            <div class="column flex-column ">
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                            </div>
-
-                            <div class="column flex-column">
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                            </div>
-
-                            <div class="column flex-column">
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                                <a href="#">Categoria</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="promo">
-                    <p class="promo-text ml-16">Confira os Produtos <strong class="text">Que acabaram De chegar</strong>
-                    </p>
-                    <button class="button-promo mt-56 ml-48">VER TODOS</button>
-                </div>
-            </div>
-            </div>
-
-        </section>
-
-        <section class="dropdown">
-            <a href="#">Departamento</a>
-            <div class=" dropdown-departamento">
-                <div>
-                    <p class="p4">Departamento</p>
-
-                    <div class=" dropdown-content">
-                        <div class="column flex-column ">
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                        </div>
-
-                        <div class="column flex-column">
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                        </div>
-
-                        <div class="column flex-column">
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                        </div>
-                        <div class="promo">
-                            <p class="promo-text ml-16">Confira os Produtos <strong class="text">Que acabaram De
-                                    chegar</strong>
-                            </p>
-                            <button class="button-promo mt-56 ml-48">VER TODOS</button>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-            </div>
-
-        </section>
-
-        <section class="dropdown">
-            <a href="#">Departamento</a>
-            <div class=" dropdown-departamento">
-                <div>
-                    <p class="p4">Departamento</p>
-
-                    <div class=" dropdown-content">
-                        <div class="column flex-column ">
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                        </div>
-
-                        <div class="column flex-column">
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                        </div>
-
-                        <div class="column flex-column">
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                        </div>
-                        <div class="promo">
-                            <p class="promo-text ml-16">Confira os Produtos <strong class="text">Que acabaram De
-                                    chegar</strong>
-                            </p>
-                            <button class="button-promo mt-56 ml-48">VER TODOS</button>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-            </div>
-
-        </section>
-
-        <section class="dropdown">
-            <a href="#">Departamento</a>
-            <div class=" dropdown-departamento">
-                <div>
-                    <p class="p4">Departamento</p>
-
-                    <div class=" dropdown-content">
-                        <div class="column flex-column ">
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                        </div>
-
-                        <div class="column flex-column">
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                        </div>
-
-                        <div class="column flex-column">
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                        </div>
-                        <div class="promo">
-                            <p class="promo-text ml-16">Confira os Produtos <strong class="text">Que acabaram De
-                                    chegar</strong>
-                            </p>
-                            <button class="button-promo mt-56 ml-48">VER TODOS</button>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-            </div>
-
-        </section>
-
-        <section class="dropdown">
-            <a href="#">Departamento</a>
-            <div class=" dropdown-departamento">
-                <div>
-                    <p class="p4">Departamento</p>
-
-                    <div class=" dropdown-content">
-                        <div class="column flex-column ">
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                        </div>
-
-                        <div class="column flex-column">
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                        </div>
-
-                        <div class="column flex-column">
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                        </div>
-                        <div class="promo">
-                            <p class="promo-text ml-16">Confira os Produtos <strong class="text">Que acabaram De
-                                    chegar</strong>
-                            </p>
-                            <button class="button-promo mt-56 ml-48">VER TODOS</button>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-            </div>
-
-        </section>
-
-        <section class="dropdown">
-            <a href="#">Departamento</a>
-            <div class=" dropdown-departamento">
-                <div>
-                    <p class="p4">Departamento</p>
-
-                    <div class=" dropdown-content">
-                        <div class="column flex-column ">
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                        </div>
-
-                        <div class="column flex-column">
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                        </div>
-
-                        <div class="column flex-column">
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                        </div>
-                        <div class="promo">
-                            <p class="promo-text ml-16">Confira os Produtos <strong class="text">Que acabaram De
-                                    chegar</strong>
-                            </p>
-                            <button class="button-promo mt-56 ml-48">VER TODOS</button>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-            </div>
-
-        </section>
-
-        <section class="dropdown">
-            <a href="#">Departamento</a>
-            <div class=" dropdown-departamento">
-                <div>
-                    <p class="p4">Departamento</p>
-
-                    <div class=" dropdown-content">
-                        <div class="column flex-column ">
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                        </div>
-
-                        <div class="column flex-column">
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                        </div>
-
-                        <div class="column flex-column">
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                        </div>
-                        <div class="promo">
-                            <p class="promo-text ml-16">Confira os Produtos <strong class="text">Que acabaram De
-                                    chegar</strong>
-                            </p>
-                            <button class="button-promo mt-56 ml-48">VER TODOS</button>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-            </div>
-
-        </section>
-
-        <section class="dropdown">
-            <a href="#">Departamento</a>
-            <div class=" dropdown-departamento">
-                <div>
-                    <p class="p4">Departamento</p>
-
-                    <div class=" dropdown-content">
-                        <div class="column flex-column ">
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                        </div>
-
-                        <div class="column flex-column">
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                        </div>
-
-                        <div class="column flex-column">
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                        </div>
-                        <div class="promo">
-                            <p class="promo-text ml-16">Confira os Produtos <strong class="text">Que acabaram De
-                                    chegar</strong>
-                            </p>
-                            <button class="button-promo mt-56 ml-48">VER TODOS</button>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-            </div>
-
-        </section>
-
-        <section class="dropdown">
-            <a href="#">Departamento</a>
-            <div class=" dropdown-departamento">
-                <div>
-                    <p class="p4">Departamento</p>
-
-                    <div class=" dropdown-content">
-                        <div class="column flex-column ">
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                        </div>
-
-                        <div class="column flex-column">
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                        </div>
-
-                        <div class="column flex-column">
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                            <a href="#">Categoria</a>
-                        </div>
-                        <div class="promo">
-                            <p class="promo-text ml-16">Confira os Produtos <strong class="text">Que acabaram De
-                                    chegar</strong>
-                            </p>
-                            <button class="button-promo mt-56 ml-48">VER TODOS</button>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-            </div>
-
-        </section>
-    </nav>
-
-    <main class=" backgroundMain">
-        <section class="container">
+    <main class=" backgroundMain ">
+        <section class="container container-header">
             <img src="./src/assets/webp/imghero.webp" alt="">
             <section class="align-items flex-column">
                 <h1>SUPER<span class="lighter">SALE</span></h1>
                 <h2 class="azul">ITENS SELECIONADOS COM ATÉ</h2>
-                <h2 class="azul h3">50%OFF</h2>
+                <h2 class="azul h3">50% OFF</h2>
             </section>
         </section>
     </main>
 
     <section class="container flex-column">
-
         <div class="flex-row w100 flex-between">
             <p class="p4">Lançamentos</p>
             <p class="cursor-pointer">Ver mais</p>
@@ -878,9 +890,7 @@
 
         <div class="swiper mt-16">
             <div class="swiper-wrapper">
-                <div class="swiper-pagination"></div>
-
-                <article  class="swiper-slide">
+                <article class="swiper-slide">
                     <div>
                         <p class=" backgroundBlue">NOVO</p>
                     </div>
@@ -889,26 +899,23 @@
                     </div>
                     <div>
                         <h3 class="h33 mt-8">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
-
                     </div>
                     <div class="mt-8 flex-row align-items-center-justify-content-start gap-24">
                         <div>
                             <s class="p3">R$ 100,00</s>
                             <p class="p4">R$ 79.90</p>
                         </div>
-
                         <u class="p3 backgroundGreen">10% OFF</u>
                     </div>
                     <div>
                         <p class="p3 mt-8">Ou em até <strong>10x de R$ 7,90</strong> </p>
                     </div>
-
                     <div class="mt-16">
                         <button class="buttonCarrossel">Comprar</button>
                     </div>
                 </article>
 
-                <article  class="swiper-slide">
+                <article class="swiper-slide">
                     <div>
                         <p class=" backgroundBlue">NOVO</p>
                     </div>
@@ -917,54 +924,23 @@
                     </div>
                     <div>
                         <h3 class="h33 mt-8">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
-
                     </div>
                     <div class="mt-8 flex-row align-items-center-justify-content-start gap-24">
                         <div>
                             <s class="p3">R$ 100,00</s>
                             <p class="p4">R$ 79.90</p>
                         </div>
-
                         <u class="p3 backgroundGreen">10% OFF</u>
                     </div>
                     <div>
                         <p class="p3 mt-8">Ou em até <strong>10x de R$ 7,90</strong> </p>
                     </div>
-
-                    <div class="mt-16">
-                        <button class="buttonCarrossel">Comprar</button>
-                    </div>
-                </article>
-                
-                <article  class="swiper-slide">
-                    <div>
-                        <p class=" backgroundBlue">NOVO</p>
-                    </div>
-                    <div>
-                        <img src="./src/assets/webp/imgcarrosel.webp" alt="">
-                    </div>
-                    <div>
-                        <h3 class="h33 mt-8">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
-
-                    </div>
-                    <div class="mt-8 flex-row align-items-center-justify-content-start gap-24">
-                        <div>
-                            <s class="p3">R$ 100,00</s>
-                            <p class="p4">R$ 79.90</p>
-                        </div>
-
-                        <u class="p3 backgroundGreen">10% OFF</u>
-                    </div>
-                    <div>
-                        <p class="p3 mt-8">Ou em até <strong>10x de R$ 7,90</strong> </p>
-                    </div>
-
                     <div class="mt-16">
                         <button class="buttonCarrossel">Comprar</button>
                     </div>
                 </article>
 
-                <article  class="swiper-slide">
+                <article class="swiper-slide">
                     <div>
                         <p class=" backgroundBlue">NOVO</p>
                     </div>
@@ -973,26 +949,23 @@
                     </div>
                     <div>
                         <h3 class="h33 mt-8">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
-
                     </div>
                     <div class="mt-8 flex-row align-items-center-justify-content-start gap-24">
                         <div>
                             <s class="p3">R$ 100,00</s>
                             <p class="p4">R$ 79.90</p>
                         </div>
-
                         <u class="p3 backgroundGreen">10% OFF</u>
                     </div>
                     <div>
                         <p class="p3 mt-8">Ou em até <strong>10x de R$ 7,90</strong> </p>
                     </div>
-
                     <div class="mt-16">
                         <button class="buttonCarrossel">Comprar</button>
                     </div>
                 </article>
 
-                <article  class="swiper-slide">
+                <article class="swiper-slide">
                     <div>
                         <p class=" backgroundBlue">NOVO</p>
                     </div>
@@ -1001,26 +974,23 @@
                     </div>
                     <div>
                         <h3 class="h33 mt-8">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
-
                     </div>
                     <div class="mt-8 flex-row align-items-center-justify-content-start gap-24">
                         <div>
                             <s class="p3">R$ 100,00</s>
                             <p class="p4">R$ 79.90</p>
                         </div>
-
                         <u class="p3 backgroundGreen">10% OFF</u>
                     </div>
                     <div>
                         <p class="p3 mt-8">Ou em até <strong>10x de R$ 7,90</strong> </p>
                     </div>
-
                     <div class="mt-16">
                         <button class="buttonCarrossel">Comprar</button>
                     </div>
                 </article>
 
-                <article  class="swiper-slide">
+                <article class="swiper-slide">
                     <div>
                         <p class=" backgroundBlue">NOVO</p>
                     </div>
@@ -1029,39 +999,68 @@
                     </div>
                     <div>
                         <h3 class="h33 mt-8">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
-
                     </div>
                     <div class="mt-8 flex-row align-items-center-justify-content-start gap-24">
                         <div>
                             <s class="p3">R$ 100,00</s>
                             <p class="p4">R$ 79.90</p>
                         </div>
-
                         <u class="p3 backgroundGreen">10% OFF</u>
                     </div>
                     <div>
                         <p class="p3 mt-8">Ou em até <strong>10x de R$ 7,90</strong> </p>
                     </div>
+                    <div class="mt-16">
+                        <button class="buttonCarrossel">Comprar</button>
+                    </div>
+                </article>
 
+                <article class="swiper-slide">
+                    <div>
+                        <p class=" backgroundBlue">NOVO</p>
+                    </div>
+                    <div>
+                        <img src="./src/assets/webp/imgcarrosel.webp" alt="">
+                    </div>
+                    <div>
+                        <h3 class="h33 mt-8">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                    </div>
+                    <div class="mt-8 flex-row align-items-center-justify-content-start gap-24">
+                        <div>
+                            <s class="p3">R$ 100,00</s>
+                            <p class="p4">R$ 79.90</p>
+                        </div>
+                        <u class="p3 backgroundGreen">10% OFF</u>
+                    </div>
+                    <div>
+                        <p class="p3 mt-8">Ou em até <strong>10x de R$ 7,90</strong> </p>
+                    </div>
                     <div class="mt-16">
                         <button class="buttonCarrossel">Comprar</button>
                     </div>
                 </article>
             </div>
-           
-            
+
+
+
             <div class="custom-prev">
                 <img src="./src/assets/svg/arrow.svg" alt="Seta para a esquerda" class="arrow-left" />
             </div>
             <div class="custom-next">
                 <img src="./src/assets/svg/arrow.svg" alt="Seta para a direita" />
             </div>
+            <div class="position-swiper-pagination ">
+                <div class="swiper-pagination"></div>
+            </div>
+
         </div>
-       
+
+
+
     </section>
 
 
-    <section class="container">
+    <section class="container ">
         <div class="backgroundCinzaEscuro">
             <img src="./src/assets/webp/imgcaneca1.webp" alt="">
         </div>
@@ -1162,13 +1161,184 @@
         </div>
     </section>
 
+
+    <section class="container flex-column">
+        <div class="flex-row w100 flex-between">
+            <p class="p4">Lançamentos</p>
+            <p class="cursor-pointer">Ver mais</p>
+        </div>
+
+        <div class="swiper mt-16">
+            <div class="swiper-wrapper">
+                <article class="swiper-slide">
+                    <div>
+                        <p class=" backgroundBlue">NOVO</p>
+                    </div>
+                    <div>
+                        <img src="./src/assets/webp/imgcarrosel.webp" alt="">
+                    </div>
+                    <div>
+                        <h3 class="h33 mt-8">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                    </div>
+                    <div class="mt-8 flex-row align-items-center-justify-content-start gap-24">
+                        <div>
+                            <s class="p3">R$ 100,00</s>
+                            <p class="p4">R$ 79.90</p>
+                        </div>
+                        <u class="p3 backgroundGreen">10% OFF</u>
+                    </div>
+                    <div>
+                        <p class="p3 mt-8">Ou em até <strong>10x de R$ 7,90</strong> </p>
+                    </div>
+                    <div class="mt-16">
+                        <button class="buttonCarrossel">Comprar</button>
+                    </div>
+                </article>
+
+                <article class="swiper-slide">
+                    <div>
+                        <p class=" backgroundBlue">NOVO</p>
+                    </div>
+                    <div>
+                        <img src="./src/assets/webp/imgcarrosel.webp" alt="">
+                    </div>
+                    <div>
+                        <h3 class="h33 mt-8">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                    </div>
+                    <div class="mt-8 flex-row align-items-center-justify-content-start gap-24">
+                        <div>
+                            <s class="p3">R$ 100,00</s>
+                            <p class="p4">R$ 79.90</p>
+                        </div>
+                        <u class="p3 backgroundGreen">10% OFF</u>
+                    </div>
+                    <div>
+                        <p class="p3 mt-8">Ou em até <strong>10x de R$ 7,90</strong> </p>
+                    </div>
+                    <div class="mt-16">
+                        <button class="buttonCarrossel">Comprar</button>
+                    </div>
+                </article>
+
+                <article class="swiper-slide">
+                    <div>
+                        <p class=" backgroundBlue">NOVO</p>
+                    </div>
+                    <div>
+                        <img src="./src/assets/webp/imgcarrosel.webp" alt="">
+                    </div>
+                    <div>
+                        <h3 class="h33 mt-8">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                    </div>
+                    <div class="mt-8 flex-row align-items-center-justify-content-start gap-24">
+                        <div>
+                            <s class="p3">R$ 100,00</s>
+                            <p class="p4">R$ 79.90</p>
+                        </div>
+                        <u class="p3 backgroundGreen">10% OFF</u>
+                    </div>
+                    <div>
+                        <p class="p3 mt-8">Ou em até <strong>10x de R$ 7,90</strong> </p>
+                    </div>
+                    <div class="mt-16">
+                        <button class="buttonCarrossel">Comprar</button>
+                    </div>
+                </article>
+
+                <article class="swiper-slide">
+                    <div>
+                        <p class=" backgroundBlue">NOVO</p>
+                    </div>
+                    <div>
+                        <img src="./src/assets/webp/imgcarrosel.webp" alt="">
+                    </div>
+                    <div>
+                        <h3 class="h33 mt-8">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                    </div>
+                    <div class="mt-8 flex-row align-items-center-justify-content-start gap-24">
+                        <div>
+                            <s class="p3">R$ 100,00</s>
+                            <p class="p4">R$ 79.90</p>
+                        </div>
+                        <u class="p3 backgroundGreen">10% OFF</u>
+                    </div>
+                    <div>
+                        <p class="p3 mt-8">Ou em até <strong>10x de R$ 7,90</strong> </p>
+                    </div>
+                    <div class="mt-16">
+                        <button class="buttonCarrossel">Comprar</button>
+                    </div>
+                </article>
+
+                <article class="swiper-slide">
+                    <div>
+                        <p class=" backgroundBlue">NOVO</p>
+                    </div>
+                    <div>
+                        <img src="./src/assets/webp/imgcarrosel.webp" alt="">
+                    </div>
+                    <div>
+                        <h3 class="h33 mt-8">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                    </div>
+                    <div class="mt-8 flex-row align-items-center-justify-content-start gap-24">
+                        <div>
+                            <s class="p3">R$ 100,00</s>
+                            <p class="p4">R$ 79.90</p>
+                        </div>
+                        <u class="p3 backgroundGreen">10% OFF</u>
+                    </div>
+                    <div>
+                        <p class="p3 mt-8">Ou em até <strong>10x de R$ 7,90</strong> </p>
+                    </div>
+                    <div class="mt-16">
+                        <button class="buttonCarrossel">Comprar</button>
+                    </div>
+                </article>
+
+                <article class="swiper-slide">
+                    <div>
+                        <p class=" backgroundBlue">NOVO</p>
+                    </div>
+                    <div>
+                        <img src="./src/assets/webp/imgcarrosel.webp" alt="">
+                    </div>
+                    <div>
+                        <h3 class="h33 mt-8">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                    </div>
+                    <div class="mt-8 flex-row align-items-center-justify-content-start gap-24">
+                        <div>
+                            <s class="p3">R$ 100,00</s>
+                            <p class="p4">R$ 79.90</p>
+                        </div>
+                        <u class="p3 backgroundGreen">10% OFF</u>
+                    </div>
+                    <div>
+                        <p class="p3 mt-8">Ou em até <strong>10x de R$ 7,90</strong> </p>
+                    </div>
+                    <div class="mt-16">
+                        <button class="buttonCarrossel">Comprar</button>
+                    </div>
+                </article>
+            </div>
+            <div class="custom-prev">
+                <img src="./src/assets/svg/arrow.svg" alt="Seta para a esquerda" class="arrow-left" />
+            </div>
+            <div class="custom-next">
+                <img src="./src/assets/svg/arrow.svg" alt="Seta para a direita" />
+            </div>
+            <div class="position-swiper-pagination ">
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section>
     <section class="backgroundAvanti align-items">
         <p class="banner p2">
             Entre em contato conosco e verifique a disponibilidade para sua região!
         </p>
     </section>
 
-    <section class="container flex-column">
+    <section class="container  flex-column">
 
         <h4 class="h4">Cadastre-se na nossa <span class="azul">newsletter</span></h4>
 
@@ -1192,9 +1362,9 @@
 
     </section>
 
-    <footer class="container flex-column">
+    <footer class="container container-fooder flex-column">
 
-        <section class="flex-row container align-items-baseline w100">
+        <section class="flex-row container container-fooder w100">
             <section>
                 <img src="./src/assets/svg/logoAvanti.svg" alt="">
                 <div class="flex-between mt-24">
@@ -1233,15 +1403,15 @@
         </section>
 
         <section>
-            <img src="./src/assets/svg/amex.svg" alt="" class="p-32">
-            <img src="./src/assets/svg/master.svg" alt="" class="p-32">
-            <img src="./src/assets/svg/visa.svg" alt="" class="p-32">
-            <img src="./src/assets/svg/hipercard.svg" alt="" class="p-32">
-            <img src="./src/assets/svg/elo.svg" alt="" class="p-32">
-            <img src="./src/assets/svg/co.svg" alt="" class="p-32">
-            <img src="./src/assets/svg/paypal.svg" alt="" class="p-32">
-            <img src="./src/assets/svg/pix.svg" alt="" class="p-32">
-            <img src="./src/assets/svg/boleto.svg" alt="" class="p-32">
+            <img src="./src/assets/svg/amex.svg" alt="" class="p-16">
+            <img src="./src/assets/svg/master.svg" alt="" class="p-16">
+            <img src="./src/assets/svg/visa.svg" alt="" class="p-16">
+            <img src="./src/assets/svg/hipercard.svg" alt="" class="p-16">
+            <img src="./src/assets/svg/elo.svg" alt="" class="p-16">
+            <img src="./src/assets/svg/co.svg" alt="" class="p-16">
+            <img src="./src/assets/svg/paypal.svg" alt="" class="p-16">
+            <img src="./src/assets/svg/pix.svg" alt="" class="p-16">
+            <img src="./src/assets/svg/boleto.svg" alt="" class="p-16">
         </section>
 
         <section class="text-align">
@@ -1265,7 +1435,6 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./src/js/app.js"></script>
 </body>
 
