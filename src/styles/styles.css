@@ -27,6 +27,7 @@ body {
     background-color: var(--color-white);
     font-style: normal;
     font-optical-sizing: auto;
+    padding-top: 150px;
 }
 
 /* === CORES E FUNDOS === */
@@ -76,6 +77,10 @@ body {
     border-radius: 8px;
 }
 
+
+.fixed{ 
+    position: fixed;
+}
 /* === BANNER === */
 .banner {
     background: var(--color-primary);
@@ -161,11 +166,24 @@ p,
 .container {
     max-width: 1440px;
     margin: 8px auto;
+    padding: 96px 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     overflow: hidden;
+}
+
+.container-header{
+    padding: 0px 0px 96px 0px;
+}
+
+.container-menu{
+    padding: 0px;
+}
+
+.container-fooder{
+    padding:  8px 2px;
 }
 
 .flex-row {
@@ -190,33 +208,36 @@ p,
     align-items: center;
 }
 
-.align-items,
-.align-items-center-justify-content-start {
+.align-items {
     display: flex;
     align-items: center;
 }
 
 .align-items-center-justify-content-start {
     justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .text-align {
     text-align: center;
 }
 
-.align-items-baseline {
-    align-items: baseline;
+/* === BARRA DE PESQUISA === */
+.search{
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 50%;
+    margin-right: 200px;
 }
 
-/* === BARRA DE PESQUISA === */
 .search-bar {
     display: flex;
     align-items: center;
     border: 1px solid var(--color-gray-dark);
     border-radius: 8px;
     overflow: hidden;
-    width: 50%;
-    margin-right: 200px;
+    width: 100%;
 }
 
 .search-bar input {
@@ -233,11 +254,11 @@ p,
     padding: 8px;
 }
 
+
 /* === MENU === */
 .menu-bar {
     display: flex;
     padding: 10px;
-  
     a {
       text-decoration: none;
       color: black;
@@ -429,6 +450,10 @@ button {
     padding-right: 8px;
 }
 
+.p-16 {
+    padding: 16px;
+}
+
 .p-32 {
     padding: 32px;
 }
@@ -504,7 +529,7 @@ li {
 .custom-prev,
 .custom-next {
     position: absolute;
-    top: 50%;
+    top: 45%;
     z-index: 10;
     cursor: pointer;
 }
@@ -519,4 +544,23 @@ li {
 
 .custom-next {
     right: 10px;
+}
+
+.position-swiper-pagination {
+    position: relative;
+    text-align: center;
+    transition: .3s opacity;
+    transform: translate3d(0,0,0);
+    z-index: 10;
+    margin-top:40px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10; 
+    background-color: #ffffff; 
+    box-shadow: 0 2px 4px #0000001a;
 }
