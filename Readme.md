@@ -1,33 +1,79 @@
 # Desafio de Estágio Avanti 🚀
 
-![Badge de Status](https://img.shields.io/badge/Status-Em_Desenvolvimento-orange)
+## 📌 Sobre o Projeto
+Este projeto foi desenvolvido como parte do desafio de estágio da Avanti. O objetivo foi recriar um layout proposto no Figma utilizando HTML, CSS e JavaScript, aplicando as melhores práticas de desenvolvimento front-end para garantir um código limpo, responsivo e bem estruturado.
 
-## 📌 Sobre o Projeto  
-Este projeto faz parte do desafio de estágio da **Avanti**, no qual recrio um layout proposto no **Figma** utilizando **HTML, CSS** e **JavaScript**. Meu foco está na aplicação das melhores práticas de desenvolvimento front-end, garantindo um código limpo, responsivo e bem estruturado. 
+Durante o processo, enfrentei diversos desafios com conflitos de branches e simulei um fluxo de trabalho profissional. Isso me permitiu aprimorar significativamente meus conhecimentos em controle de versão com Git, organização de código e criação de pull requests eficazes.
 
-Além da implementação visual, estou aprimorando minhas habilidades em controle de versões ao trabalhar com diferentes branches, simulando um fluxo de desenvolvimento profissional. Essa abordagem me ajuda a organizar melhor o código, otimizar pull requests e vivenciar, na prática, a dinâmica colaborativa adotada em equipes de desenvolvimento. 
+Foi uma experiência desafiadora e enriquecedora, que demonstrou como diferentes abordagens podem levar ao mesmo resultado — e como o aprendizado está em cada tentativa.
 
-## 🛠 Tecnologias Utilizadas  
-- **Frontend**: HTML, CSS, JavaScript  
-- **Ferramentas**: Git, GitHub, Figma  
+## 🛠 Tecnologias Utilizadas
+- Frontend: HTML, CSS, JavaScript
+- Ferramentas: Git, GitHub, Figma
 
-## 📥 Instalação  
-1. Clone o repositório:  
-   ```bash
-   git clone https://github.com/TiagoGomides/Desafio-Avanti.git
-   ```
+## 📂 Estrutura do Projeto
+
+```css
+├── Readme.md
+├── index.html
+└── src
+    ├── assets
+    │   ├── svg
+    │   │   ├── amex.svg
+    │   │   ├── arrow.svg
+    │   │   ├── avanti-fooder.svg
+    │   │   ├── boleto.svg
+    │   │   ├── carrinho.svg
+    │   │   ├── co.svg
+    │   │   ├── details.svg
+    │   │   ├── elo.svg
+    │   │   ├── facebook.svg
+    │   │   ├── hipercard.svg
+    │   │   ├── icone.svg
+    │   │   ├── instagram.svg
+    │   │   ├── let.svg
+    │   │   ├── logoAvanti.svg
+    │   │   ├── mapa.svg
+    │   │   ├── master.svg
+    │   │   ├── paypal.svg
+    │   │   ├── pesquisa.svg
+    │   │   ├── pix.svg
+    │   │   ├── tiktok.svg
+    │   │   ├── user.svg
+    │   │   ├── visa.svg
+    │   │   ├── vtex-rosa.svg
+    │   │   ├── vtex.svg
+    │   │   └── youtube.svg
+    │   └── webp
+    │       ├── imgavanti.webp
+    │       ├── imgcaneca1.webp
+    │       ├── imgcaneca2.webp
+    │       ├── imgcarrosel.webp
+    │       ├── imghero.webp
+    │       └── imghero2.webp
+    ├── js
+    │   └── app.js
+    └── styles
+        └── styles.css
+```
+## 📥 Instalação
+1. Clone o repositório:
+```bash
+git clone https://github.com/TiagoGomides/Desafio-Avanti.git
+```
+
 2. Acesse a pasta do projeto:
-   ```bash
-   cd desafio-avanti
-   ```
-3. Abra o arquivo `index.html` no navegador.
+```bash
+cd desafio-avanti
+```
+3. Abra o arquivo index.html em seu navegador para visualizar o projeto.
 
-## 📌 Funcionalidades  
-✔️ Recriação fiel do layout proposto no Figma, garantindo precisão visual e responsividade.
+## ✅ Funcionalidades
+- Recriação fiel do layout proposto no Figma, com foco em responsividade e fidelidade visual.
+- Código limpo, semântico e estruturado conforme as melhores práticas de front-end.
+- Simulação de um fluxo de trabalho real, utilizando branches, commits organizados e pull requests.
 
-✔️ Aplicação de boas práticas de desenvolvimento front-end para um código limpo e estruturado.
+# 👤 Autor
+Feito com dedicação por Tiago Gomides — explorando boas práticas de desenvolvimento e versionamento de código.
 
-✔️ Simulação de fluxo de trabalho profissional, utilizando branches e pull requests para aprimorar o controle de versões e a colaboração. 🚀
-
-## 👤 Autor  
-Feito por **Tiago Gomides** – Explorando boas práticas de desenvolvimento e versionamento de código. 
+[LinkedIn](https://www.linkedin.com/in/gomides-tiago/) 
