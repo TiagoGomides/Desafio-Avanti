@@ -32,6 +32,16 @@ body {
     padding-top: 150px;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px #0000001a;
+}
+
 /* === CORES E FUNDOS === */
 .azul {
     color: var(--color-primary);
@@ -39,6 +49,7 @@ body {
 
 .backgroundMain {
     background-color: #E7E7EA;
+    height: 100%;
 }
 
 .backgroundCinzaEscuro {
@@ -254,6 +265,10 @@ li {
 
 .container-header {
     padding: 0px 0px 96px 0px;
+
+    @media (max-width: 768px) {
+        padding: 0px;
+    }
 }
 
 .container-menu {
@@ -344,6 +359,7 @@ li {
 
 .item1 {
     order: 1;
+
     @media (max-width: 768px) {
         order: 2;
     }
@@ -703,6 +719,7 @@ button {
 
 .ml-48 {
     margin-left: 48px;
+
     @media (max-width: 768px) {
         margin-left: 8px;
     }
@@ -710,7 +727,7 @@ button {
 
 .ml-56 {
     margin-left: 56px;
-    
+
     @media (max-width: 768px) {
         margin-left: 0;
     }
@@ -801,16 +818,6 @@ li {
     margin-top: 40px;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px #0000001a;
-}
-
 .imgMaps {
     @media (max-width: 768px) {
         width: 50px;
@@ -820,7 +827,6 @@ header {
 
 .display-none-web {
     display: none;
-
     @media (max-width: 768px) {
         display: flex;
     }
@@ -828,7 +834,6 @@ header {
 
 .display-none-mobile {
     display: flex;
-
     @media (max-width: 768px) {
         display: none;
     }
@@ -836,7 +841,6 @@ header {
 
 .display-none-mobile-block {
     display: block;
-
     @media (max-width: 768px) {
         display: none;
     }
@@ -844,80 +848,74 @@ header {
 
 .mobile-only {
     display: none;
-}
 
-@media (max-width: 768px) {
-    .mobile-only {
+    @media (max-width: 768px) {
         display: flex;
         flex-direction: column;
         width: 100%;
         padding: 16px;
-    }
 
-    .mobile-only details {
-        border-bottom: 1px solid #DDDDDD;
-        padding: 12px 0;
-    }
+        details {
+            border-bottom: 1px solid #DDDDDD;
+            padding: 12px 0;
+        }
 
-    .mobile-only summary {
-        display: flex;
-        align-items: flex-start;
-        justify-content: start;
-        cursor: pointer;
-        list-style: none;
-        position: relative;
-        padding-right: 28px;
-    }
+        summary {
+            margin: 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: start;
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+            padding-right: 28px;
+            font-size: 16px;
+            font-weight: bold;
+        }
 
-    .mobile-only summary {
-        margin: 0;
-        font-size: 16px;
-        font-weight: bold;
-    }
+        summary::marker {
+            display: none;
+        }
 
-    .mobile-only h5 {
-        margin-top: 8px;
-        font-size: 12px;
+        summary::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            background-image: url('../assets/svg/details.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: transform 0.3s ease;
+        }
 
-    }
+        h5 {
+            margin-top: 8px;
+            font-size: 12px;
+        }
 
-    .mobile-only summary::marker {
-        display: none;
-    }
+        details[open] summary::after {
+            transform: translateY(-50%) rotate(180deg);
+        }
 
-    .mobile-only summary::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 16px;
-        height: 16px;
-        background-image: url('../assets/svg/details.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        transition: transform 0.3s ease;
-    }
+        ul {
+            margin: 10px 0 0 16px;
+            padding: 0;
+            list-style: none;
+        }
 
-    .mobile-only details[open] summary::after {
-        transform: translateY(-50%) rotate(180deg);
-    }
+        li {
+            padding: 4px 0;
+            font-size: 14px;
+            color: #333;
+        }
 
-    .mobile-only ul {
-        margin: 10px 0 0 16px;
-        padding: 0;
-        list-style: none;
-    }
-
-    .mobile-only li {
-        padding: 4px 0;
-        font-size: 14px;
-        color: #333;
     }
 }
 
 .position-absolute {
-
     @media (max-width: 768px) {
         position: absolute;
         left: 180px;
