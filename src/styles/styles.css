@@ -500,10 +500,10 @@ li {
             top: 24px;
             left: 150px;
             background: #ffffff;
-            padding: 8px;
+            padding: 1px;
             margin: 0px;
-            gap: 0px;
-
+            gap: 8px;
+            flex: 0;
             a {
                 padding: 4px;
                 font-size: 12px;
@@ -531,17 +531,24 @@ li {
     a:hover {
         color: blue;
     }
-
-    @media (max-width: 768px) {
-        padding: 8px;
-    }
-
 }
+
+.column-mobile {
+    @media (max-width: 768px) {
+        padding: 0px;
+        flex: 0;
+        gap: 0px;
+    } 
+}
+
 
 .departamento-link {
     display: flex;
     width: 20%;
     position: relative;
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
 }
 
 .seta {
