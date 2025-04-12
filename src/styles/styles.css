@@ -157,6 +157,7 @@ h2 {
 h3,
 .h3 {
     font-size: 60px;
+
     @media (max-width: 768px) {
         font-size: 32px;
     }
@@ -179,6 +180,7 @@ h5 {
 
 p {
     font-size: var(--font-size-base);
+
     @media (max-width: 768px) {
         font-size: 14px;
     }
@@ -423,11 +425,11 @@ li {
 
 .resultado {
     position: absolute;
-    z-index: 1000;
+    z-index: 10;
     top: 90px;
 
     @media (max-width: 768px) {
-        top: 5px;
+        top: 510px;
     }
 }
 
@@ -465,7 +467,7 @@ li {
 }
 
 .dropdown-departamento,
-.dropdown-content {
+.dropdown-content  {
     display: none;
     position: absolute;
     background: #ffffff;
@@ -495,15 +497,16 @@ li {
         right: 0;
 
         @media (max-width: 768px) {
-            top: 15px;
+            top: 24px;
             left: 150px;
             background: #ffffff;
-            padding: 16px;
-            margin: 0px auto;
-            gap: 8px;
-            width: 250px;
-            a{
+            padding: 8px;
+            margin: 0px;
+            gap: 0px;
+
+            a {
                 padding: 4px;
+                font-size: 12px;
             }
         }
     }
@@ -529,6 +532,10 @@ li {
         color: blue;
     }
 
+    @media (max-width: 768px) {
+        padding: 8px;
+    }
+
 }
 
 .departamento-link {
@@ -547,8 +554,9 @@ li {
     transition: transform 0.3s ease;
 
     @media (max-width: 768px) {
-        left: 140px;
+        left: 110px;
         top: 45%;
+        right: 0px;
     }
 }
 
