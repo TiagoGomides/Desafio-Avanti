@@ -7,6 +7,9 @@ Durante o processo, enfrentei diversos desafios com conflitos de branches e simu
 
 Foi uma experiência desafiadora e enriquecedora, que demonstrou como diferentes abordagens podem levar ao mesmo resultado — e como o aprendizado está em cada tentativa.
 
+## 🚀 Deploy
+🔗 Acesse a aplicação online: [desafioavanti](https://desafioavanti.netlify.app/)
+
 ## 🛠 Tecnologias Utilizadas
 - Frontend: HTML, CSS, JavaScript
 - Ferramentas: Git, GitHub, Figma
