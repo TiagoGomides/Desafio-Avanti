@@ -54,7 +54,10 @@ Foi uma experiência desafiadora e enriquecedora, que demonstrou como diferentes
     │       ├── imgcarrosel.webp
     │       ├── imghero.webp
     │       └── imghero2.webp
-    git commit -m "Teste git gub TMYT-001"
+    
+    git commit -m "tese 3  TMYT-001 TMYT-003 TMYT-004"
+    git commit -m "teste 3 "
+
     ├── js
     │   └── app.js
     └── styles
